@@ -1,0 +1,13 @@
+{
+  "name": "@proofkit/widget",
+  "version": "0.0.1",
+  "main": "./dist/widget.js",
+  "scripts": {
+    "build": "esbuild src/widget.ts --bundle --platform=browser --format=iife --global-name=ProofKit --outfile=dist/widget.js --minify",
+    "dev": "esbuild src/widget.ts --bundle --platform=browser --format=iife --global-name=ProofKit --outfile=dist/widget.js --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.3"
+  }
+}
